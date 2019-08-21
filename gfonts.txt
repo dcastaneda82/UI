@@ -1,0 +1,11 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great|Fredoka+One|Red+Hat+Text|Shadows+Into+Light|Varela+Round&display=swap');
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Fredoka+One|Red+Hat+Text|Shadows+Into+Light|Varela+Round&display=swap" rel="stylesheet">
+
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Fredoka One', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Varela Round', sans-serif;
