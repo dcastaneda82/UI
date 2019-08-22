@@ -1,9 +1,16 @@
 
-.images(@justify,@align, @width) {
+.images(@justify,@align,@width,@padding) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
-    max-width: @width;
+    width: @width;
+    padding: @padding;
+}
+
+.headerText(@align, @color, @txtSize) {
+    align-self: @align;
+    color: @color;
+    font-size: @txtSize;
 }
 
 .header(@justify,@align, @color) {

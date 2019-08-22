@@ -138,7 +138,7 @@ body {
   font-family: 'Varela Round', sans-serif;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 h1 {
@@ -153,12 +153,19 @@ button {
 }
 .logo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-content: center;
+  background-color: #EEEEEE;
 }
 .logo .toolbox {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
-  max-width: 10%;
+  width: 15%;
+  padding: 5px 0px 5px 7px;
+}
+.logo h1 {
+  align-self: center;
+  color: #5C9EAD;
+  font-size: 3.7rem;
 }
