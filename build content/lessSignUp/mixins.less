@@ -23,20 +23,15 @@
     border-bottom: solid @cadet-blue 5px;
 }
 
-.section(@justify, @align, @flow, @txtAlign) {
+.form(@flow, @align) {
     display: flex;
-    justify-content: @justify;
-    align-self: @align;
     flex-flow: @flow;
-    text-align: @txtAlign;
+    align-self: @align;
 }
 
-.sectionText(@fntSize, @txtColor, @bg-color, @borderRaid, @padding) {
-    font-size: @fntSize;
-    color: @txtColor;
-    background-color: @bg-color;
-    border-radius: @borderRaid;
-    padding: @padding;
+.form-txt(@color, @f-size) {
+    color: @color;
+    font-size: @f-size;
 }
 
 .buttons(@flow, @justify, @align) {
@@ -52,8 +47,7 @@
     width: @width;
     font-size: @fSize;
     border-radius: @borderRaid;
-    margin: 10px 0 10px 0;
-    padding: 0px 10px;
+    
 }
 
 .footer(@justify, @bg-color, @txt-color) {

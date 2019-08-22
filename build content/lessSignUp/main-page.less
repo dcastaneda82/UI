@@ -33,114 +33,65 @@
     }
 }
 
-.welcome {
-    .section(space-evenly, center, column, center);
-    margin: 7rem 0 10px 0;
+.signUpForm {
+    .form(column, center);
+    margin: 100px 0 0 0;
+    width: 95%;
 
-    @media @mobile800 {
-        margin: 10rem 0 10px 0;
-    }
-
-    @media @mobile1000 {
-        .animationMain(fadein 3s, fadein 3s, fadein 3s, fadein 3s);
-
-        @keyframes fadein {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-    }
+    .form-txt(@main-txt, 100%);
 
     h2 {
-        .sectionText(3.7rem, @mainTxt, @main-bg, 7px, 10px);
+        .form-txt(@main-txt, 2.5rem);
+    }
+
+    hr {
+        border: 1px solid @middle-red;
+        width: 100%;
+    }
+
+    .inputLabels {
+        margin: 2rem 0 0 0;
+        font-size: 2rem;
+
+
+    }
+
+    .inputFields {
+        padding: 15px 0 5px 3px;
+    }
+
+    .memberMe {
+        margin: 15px 0px 0 0;
+        font-size: 1.5rem;
+
+        input {
+            margin: 10px 0 5px;
+        }
+    }
+
+    .buttons {
+
+        .buttons(row, space-between, center);
+        margin: 20px 0 14px 0px;
 
         @media @mobile800 {
-            .sectionText(2.7rem, @mainTxt, @main-bg, 7px, 10px);
-            margin: 0 0 15px 0;
-            align-self: center;
+            .buttons(row, space-evenly, center);
+            margin: 20px 30px 15px 30px;
         }
 
         @media @mobile1000 {}
-    }
 
-    h3 {
-        .sectionText(2.7rem, @mainTxt, @main-bg, 7px, 10px);
-        margin: 10px 0 10px 0;
+        button {
+            .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
+            margin: 10px 0 10px 0;
+            padding: 0px 10px;
 
-        @media @mobile800 {
-            .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px 155px);
-            margin: 15px 0 15px 0;
-            align-self: center;
-        }
-
-        @media @mobile1000 {}
-    }
-
-    img {
-        .images(center, 100%, 7px);
-        margin: 10px 0 10px 0;
-
-        @media @mobile800 {
-            .images(center, 683px, 7px);
-            margin: 15px 0 15px 0;
-        }
-
-        @media @mobile1000 {}
-    }
-
-    h4 {
-        .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px);
-        margin: 10px 0 10px 0;
-
-        @media @mobile800 {
-            .sectionText(2rem, @mainTxt, @main-bg, 7px, 10px 177px);
-            margin: 20px 0 0px 0;
-            align-self: center;
-        }
-
-        @media @mobile1000 {}
-    }
-
-    h5 {
-        .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px);
-        margin: 10px 0 10px 0;
-
-        @media @mobile800 {
-            .sectionText(2rem, @mainTxt, @main-bg, 7px, 10px 240px);
-            margin: 20px 0 0px 0;
-            align-self: center;
-        }
-
-        @media @mobile1000 {}
-    }
-}
-
-.buttons {
-
-    .buttons(row, space-evenly, center);
-    margin: 0 0 14px 0px;
-
-    @media @mobile800 {
-        .buttons(row, space-evenly, center);
-        margin: 20px 30px 15px 30px;
-    }
-
-    @media @mobile1000 {}
-
-    button {
-        .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
-
-        &:hover {
-            cursor: pointer;
-            color: lighten(@blue-saphire, 60%);
-            background-color: lighten(@cadet-blue, 20%);
+            &:hover {
+                cursor: pointer;
+                color: lighten(@blue-saphire, 60%);
+                background-color: lighten(@cadet-blue, 20%);
+            }
         }
     }
-
 
 }
