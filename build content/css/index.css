@@ -127,6 +127,11 @@ table {
 }
 html {
   font-size: 100%;
+  background: url('../images/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+body {
+  width: 500px;
 }
 html,
 body {
@@ -145,4 +150,15 @@ h3 {
 }
 button {
   font-family: 'Red Hat Text', sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+.logo .toolbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  max-width: 10%;
 }

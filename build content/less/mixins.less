@@ -3,13 +3,14 @@
     display: flex;
     justify-content: @justify;
     align-content: @align;
+    max-width: @width;
 }
 
-.header(@justify,@align,@color) {
+.header(@justify,@align, @color) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
-    background-color: @color;
+    background-color: @main-bg
 }
 
 .buttons(@justify,@align,@color) {
@@ -24,5 +25,6 @@
     justify-content: @justify;
     align-content: @align;
     background-color: @color;
+    font-family: 'Varela Round', sans-serif;
 }
 
