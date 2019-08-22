@@ -1,0 +1,146 @@
+//Landing Page Content
+
+.logo {
+    .header(center, center, @header-bg);
+    padding: 5px 0 5px 0;
+    position: fixed;
+    width: 100%;
+
+    @media @mobile800 {}
+
+    .toolbox {
+        .imageLogo(65px, 10px 7px 8.9px 7px);
+
+        @media @mobile800 {
+            .imageLogo(75px, 10px 7px 8.9px 7px);
+        }
+
+        @media @mobile1000 {
+            .imageLogo(70px, 10px 7px 8.9px 7px);
+        }
+    }
+
+    h1 {
+        .headerText(center, @h1TextColor, 3.5rem);
+
+        @media @mobile800 {
+            .headerText(center, @h1TextColor, 4.5rem);
+        }
+
+        @media @mobile1000 {
+            .headerText(center, @h1TextColor, 3.5rem);
+        }
+    }
+}
+
+.welcome {
+    .section(space-evenly, center, column, center);
+    margin: 7rem 0 10px 0;
+
+    @media @mobile800 {
+        margin: 10rem 0 10px 0;
+    }
+
+    @media @mobile1000 {
+        .animationMain(fadein 3s, fadein 3s, fadein 3s, fadein 3s);
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    h2 {
+        .sectionText(3.7rem, @mainTxt, @main-bg, 7px, 10px);
+
+        @media @mobile800 {
+            .sectionText(2.7rem, @mainTxt, @main-bg, 7px, 10px);
+            margin: 0 0 15px 0;
+            align-self: center;
+        }
+
+        @media @mobile1000 {}
+    }
+
+    h3 {
+        .sectionText(2.7rem, @mainTxt, @main-bg, 7px, 10px);
+        margin: 10px 0 10px 0;
+
+        @media @mobile800 {
+            .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px 155px);
+            margin: 15px 0 15px 0;
+            align-self: center;
+        }
+
+        @media @mobile1000 {}
+    }
+
+    img {
+        .images(center, 100%, 7px);
+        margin: 10px 0 10px 0;
+
+        @media @mobile800 {
+            .images(center, 683px, 7px);
+            margin: 15px 0 15px 0;
+        }
+
+        @media @mobile1000 {}
+    }
+
+    h4 {
+        .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px);
+        margin: 10px 0 10px 0;
+
+        @media @mobile800 {
+            .sectionText(2rem, @mainTxt, @main-bg, 7px, 10px 177px);
+            margin: 20px 0 0px 0;
+            align-self: center;
+        }
+
+        @media @mobile1000 {}
+    }
+
+    h5 {
+        .sectionText(2.3rem, @mainTxt, @main-bg, 7px, 10px);
+        margin: 10px 0 10px 0;
+
+        @media @mobile800 {
+            .sectionText(2rem, @mainTxt, @main-bg, 7px, 10px 240px);
+            margin: 20px 0 0px 0;
+            align-self: center;
+        }
+
+        @media @mobile1000 {}
+    }
+}
+
+.buttons {
+
+    .buttons(row, space-evenly, center);
+    margin: 0 0 14px 0px;
+
+    @media @mobile800 {
+        .buttons(row, space-evenly, center);
+        margin: 20px 30px 15px 30px;
+    }
+
+    @media @mobile1000 {}
+
+    button {
+        .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
+
+        &:hover {
+            cursor: pointer;
+            color: lighten(@blue-saphire, 60%);
+            background-color: lighten(@cadet-blue, 20%);
+        }
+    }
+
+
+}

@@ -20,23 +20,23 @@
     justify-content: @justify;
     align-content: @align;
     background-color: @bg-color;
+    border-bottom: solid @cadet-blue 5px;
 }
 
-.section(@justify, @align, @flow, @margin, @txtAlign) {
+.section(@justify, @align, @flow, @txtAlign) {
     display: flex;
     justify-content: @justify;
     align-self: @align;
     flex-flow: @flow;
-    margin: @margin;
     text-align: @txtAlign;
 }
 
-.sectionText(@fntSize, @txtColor, @bg-color) {
+.sectionText(@fntSize, @txtColor, @bg-color, @borderRaid, @padding) {
     font-size: @fntSize;
     color: @txtColor;
     background-color: @bg-color;
-    border-radius: 7px;
-    padding: 10px;
+    border-radius: @borderRaid;
+    padding: @padding;
 }
 
 .buttons(@flow, @justify, @align) {
@@ -44,7 +44,6 @@
     flex-flow: @flow;
     justify-content: @justify;
     align-content: @align;
-    margin: 0 0 14px 0px;
 }
 
 .buttonAtt(@bg-color, @txt-color, @width, @fSize, @borderRaid) {
@@ -64,6 +63,16 @@
     color: @txt-color;
     width: 100%;
     margin: 10px 0 0 0;
-    padding:5px 0 5px 0;
+    padding: 5px 0 5px 0;
     font-family: 'Varela Round', sans-serif;
+}
+
+.animationMain(@fadein, @fadein, @fadein, @fadein) {
+    animation: @fadein;
+	-moz-animation: @fadein;
+	/* Firefox */
+	-webkit-animation: @fadein;
+	/* Safari and Chrome */
+	-o-animation: @fadein;
+	/* Opera */
 }
