@@ -1,10 +1,16 @@
 
-.images(@justify,@align,@width,@padding) {
+.imageLogo(@justify,@align,@width,@padding) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
     width: @width;
     padding: @padding;
+}
+
+.images(@align, @width, @borderRadius) {
+    align-self: @align;
+    width: @width;
+    border-radius: @borderRadius;
 }
 
 .headerText(@align, @color, @txtSize) {
@@ -17,7 +23,24 @@
     display: flex;
     justify-content: @justify;
     align-content: @align;
-    background-color: @main-bg
+    background-color: @color;
+}
+
+.section(@justify, @align, @flow, @margin, @txtAlign) {
+    display: flex;
+    justify-content: @justify;
+    align-self: @align;
+    flex-flow: @flow;
+    margin: @margin;
+    text-align: @txtAlign;
+}
+
+.sectionText(@fntSize, @txtColor, @bgColor) {
+    font-size: @fntSize;
+    color: @txtColor;
+    background-color: @bgColor;
+    border-radius: 7px;
+    padding: 10px;
 }
 
 .buttons(@justify,@align,@color) {

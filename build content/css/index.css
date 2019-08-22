@@ -131,7 +131,10 @@ html {
   background-size: cover;
 }
 body {
-  width: 500px;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-self: center;
 }
 html,
 body {
@@ -155,17 +158,57 @@ button {
   display: flex;
   justify-content: center;
   align-content: center;
-  background-color: #EEEEEE;
+  background-color: #FFFFFF;
+  padding: 10px 0 10px 0;
+  position: fixed;
 }
 .logo .toolbox {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   width: 15%;
-  padding: 5px 0px 5px 7px;
+  padding: 5px 7px 5px 7px;
 }
 .logo h1 {
   align-self: center;
   color: #5C9EAD;
   font-size: 3.7rem;
+}
+.welcome {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  flex-flow: column;
+  margin: 20px 10px 20px 10px;
+  text-align: center;
+}
+.welcome h2 {
+  font-size: 2.7rem;
+  color: #035E7B;
+  background-color: rgba(238, 238, 238, 0.616);
+  border-radius: 7px;
+  padding: 10px;
+  margin: 5rem 0 10px 0;
+}
+.welcome h3 {
+  font-size: 2.7rem;
+  color: #035E7B;
+  background-color: rgba(238, 238, 238, 0.616);
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+.welcome img {
+  align-self: center;
+  width: 100%;
+  border-radius: 7px;
+  margin: 10px 0 10px 0;
+}
+.welcome h4 {
+  font-size: 2.3rem;
+  color: #035E7B;
+  background-color: rgba(238, 238, 238, 0.616);
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0 10px 0;
 }
