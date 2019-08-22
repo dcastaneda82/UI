@@ -1,5 +1,4 @@
-
-.imageLogo(@justify,@align,@width,@padding) {
+.imageLogo(@justify, @align, @width, @padding) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
@@ -19,11 +18,11 @@
     font-size: @txtSize;
 }
 
-.header(@justify,@align, @color) {
+.header(@justify, @align, @bg-color) {
     display: flex;
     justify-content: @justify;
     align-content: @align;
-    background-color: @color;
+    background-color: @bg-color;
 }
 
 .section(@justify, @align, @flow, @margin, @txtAlign) {
@@ -35,26 +34,39 @@
     text-align: @txtAlign;
 }
 
-.sectionText(@fntSize, @txtColor, @bgColor) {
+.sectionText(@fntSize, @txtColor, @bg-color) {
     font-size: @fntSize;
     color: @txtColor;
-    background-color: @bgColor;
+    background-color: @bg-color;
     border-radius: 7px;
     padding: 10px;
 }
 
-.buttons(@justify,@align,@color) {
+.buttons(@flow, @justify, @align) {
     display: flex;
+    flex-flow: @flow;
     justify-content: @justify;
     align-content: @align;
-    background-color: @color;
+    margin: 0 0 14px 0px;
 }
 
-.footer(@justify,@align,@color) {
+.buttonAtt(@bg-color, @txt-color, @width, @fSize, @borderRaid) {
+    background-color: @bg-color;
+    color: @txt-color;
+    width: @width;
+    font-size: @fSize;
+    border-radius: @borderRaid;
+    margin: 10px 0 10px 0;
+    padding: 0px 10px;
+}
+
+.footer(@justify, @bg-color, @txt-color) {
     display: flex;
     justify-content: @justify;
-    align-content: @align;
-    background-color: @color;
+    background-color: @bg-color;
+    color: @txt-color;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding:5px 0 5px 0;
     font-family: 'Varela Round', sans-serif;
 }
-
