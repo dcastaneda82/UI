@@ -95,3 +95,32 @@
     }
 
 }
+
+.alreadyMember {
+        .logBackIn(column, space-between, center);
+        .logBackAttr(@cadet-blue , 1.3rem, @white);
+        width: 95%;
+        border-radius: 7px;
+        padding: 0 0 10px 0;
+
+        b {
+            text-align: center;
+            font-size: 2rem;
+            padding: 10px 0 10px 0;
+        }
+
+        button {
+            align-self: center;
+            font-size: 1.5rem;
+            padding: 0 20px 0 20px;
+            border-radius: 7px;
+            background-color: @middle-red;
+            color: @isabelline;
+
+            &:hover {
+                cursor: pointer;
+                color: lighten(@isabelline, 30%);
+                background-color: lighten(@middle-red, 20%);
+            }
+        }
+    }
