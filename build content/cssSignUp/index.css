@@ -213,10 +213,15 @@ footer {
   display: flex;
   flex-flow: column;
   align-self: center;
-  margin: 100px 0 0 0;
+  margin: 10rem 0 0 0;
   width: 95%;
   color: #035E7B;
   font-size: 100%;
+}
+@media (min-width: 800px) {
+  .signUpForm {
+    width: 60%;
+  }
 }
 .signUpForm h2 {
   color: #035E7B;
@@ -251,9 +256,9 @@ footer {
   .signUpForm .buttons {
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
-    margin: 20px 30px 15px 30px;
+    margin: 20px 0px 15px 0px;
   }
 }
 .signUpForm .buttons button {
@@ -281,6 +286,11 @@ footer {
   width: 95%;
   border-radius: 7px;
   padding: 0 0 10px 0;
+}
+@media (min-width: 800px) {
+  .alreadyMember {
+    width: 60%;
+  }
 }
 .alreadyMember b {
   text-align: center;

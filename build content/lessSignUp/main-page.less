@@ -35,10 +35,14 @@
 
 .signUpForm {
     .form(column, center);
-    margin: 100px 0 0 0;
+    margin: 10rem 0 0 0;
     width: 95%;
 
     .form-txt(@main-txt, 100%);
+
+    @media @mobile800 {
+        width: 60%;
+    }
 
     h2 {
         .form-txt(@main-txt, 2.5rem);
@@ -52,8 +56,6 @@
     .inputLabels {
         margin: 2rem 0 0 0;
         font-size: 2rem;
-
-
     }
 
     .inputFields {
@@ -75,8 +77,8 @@
         margin: 20px 0 14px 0px;
 
         @media @mobile800 {
-            .buttons(row, space-evenly, center);
-            margin: 20px 30px 15px 30px;
+            .buttons(row, space-between, center);
+            margin: 20px 0px 15px 0px;
         }
 
         @media @mobile1000 {}
@@ -103,6 +105,9 @@
         border-radius: 7px;
         padding: 0 0 10px 0;
 
+        @media @mobile800 {
+            width: 60%;
+        }
         b {
             text-align: center;
             font-size: 2rem;
