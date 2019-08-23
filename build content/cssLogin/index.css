@@ -262,7 +262,7 @@ p {
   .loginForm .buttons {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: center;
     margin: 20px 0px 15px 0px;
   }
