@@ -1,0 +1,84 @@
+.imageLogo(@width, @padding) {
+    width: @width;
+    padding: @padding;
+}
+
+.images(@align, @width, @borderRadius) {
+    align-self: @align;
+    width: @width;
+    border-radius: @borderRadius;
+}
+
+.headerText(@align, @color, @txtSize) {
+    align-self: @align;
+    color: @color;
+    font-size: @txtSize;
+}
+
+.header(@justify, @align, @bg-color) {
+    display: flex;
+    justify-content: @justify;
+    align-content: @align;
+    background-color: @bg-color;
+    border-bottom: solid @cadet-blue 5px;
+}
+
+.form(@flow, @align) {
+    display: flex;
+    flex-flow: @flow;
+    align-self: @align;
+}
+
+.form-txt(@color, @f-size) {
+    color: @color;
+    font-size: @f-size;
+}
+
+.buttons(@flow, @justify, @align) {
+    display: flex;
+    flex-flow: @flow;
+    justify-content: @justify;
+    align-content: @align;
+}
+
+.buttonAtt(@bg-color, @txt-color, @width, @fSize, @borderRaid) {
+    background-color: @bg-color;
+    color: @txt-color;
+    width: @width;
+    font-size: @fSize;
+    border-radius: @borderRaid;
+}
+
+.logBackIn(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-self: @align;
+}
+
+.logBackAttr (@color, @fSize, @bgcolor) {
+    color: @color;
+    font-size: @fSize;
+    background-color: @bgcolor;
+}
+
+.footer(@justify, @bg-color, @txt-color) {
+    display: flex;
+    justify-content: @justify;
+    background-color: @bg-color;
+    color: @txt-color;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 5px 0 5px 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.animationMain(@fadein, @fadein, @fadein, @fadein) {
+    animation: @fadein;
+	-moz-animation: @fadein;
+	/* Firefox */
+	-webkit-animation: @fadein;
+	/* Safari and Chrome */
+	-o-animation: @fadein;
+	/* Opera */
+}

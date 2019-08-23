@@ -33,10 +33,18 @@
     }
 }
 
-.signUpForm {
+p {
+    align-self: center;
+    margin: 8rem 0 0 0;
+    font-size: 2.7rem;
+    color: @font-color;
+}
+
+.loginForm {
+
     .form(column, center);
-    margin: 10rem 0 0 0;
     width: 95%;
+    margin: 3rem 0 0 0;
 
     .form-txt(@main-txt, 100%);
 
@@ -54,7 +62,7 @@
     }
 
     .inputLabels {
-        margin: 2rem 0 0 0;
+        margin: 3rem 0 0 0;
         font-size: 2rem;
     }
 
@@ -73,7 +81,7 @@
 
     .buttons {
 
-        .buttons(row, space-between, center);
+        .buttons(row, flex-end, center);
         margin: 20px 0 14px 0px;
 
         @media @mobile800 {
@@ -82,6 +90,7 @@
         }
 
         button {
+            
             .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
             margin: 10px 0 10px 0;
             padding: 0px 10px;
@@ -96,34 +105,36 @@
 
 }
 
-.alreadyMember {
-        .logBackIn(column, space-between, center);
-        .logBackAttr(@cadet-blue , 1.3rem, @white);
-        width: 95%;
+.newMember {
+    .logBackIn(column, space-between, center);
+    .logBackAttr(@cadet-blue , 1.3rem, @white);
+    width: 95%;
+    border-radius: 7px;
+    padding: 0 0 10px 0;
+    margin: 1.9rem 0 0 0;
+
+    @media @mobile800 {
+        width: 60%;
+    }
+
+    b {
+        text-align: center;
+        font-size: 2rem;
+        padding: 10px 0 10px 0;
+    }
+
+    button {
+        align-self: center;
+        font-size: 1.5rem;
+        padding: 0 20px 0 20px;
         border-radius: 7px;
-        padding: 0 0 10px 0;
+        background-color: @middle-red;
+        color: @isabelline;
 
-        @media @mobile800 {
-            width: 60%;
-        }
-        b {
-            text-align: center;
-            font-size: 2rem;
-            padding: 10px 0 10px 0;
-        }
-
-        button {
-            align-self: center;
-            font-size: 1.5rem;
-            padding: 0 20px 0 20px;
-            border-radius: 7px;
-            background-color: @middle-red;
-            color: @isabelline;
-
-            &:hover {
-                cursor: pointer;
-                color: lighten(@isabelline, 30%);
-                background-color: lighten(@middle-red, 20%);
-            }
+        &:hover {
+            cursor: pointer;
+            color: lighten(@isabelline, 30%);
+            background-color: lighten(@middle-red, 20%);
         }
     }
+}

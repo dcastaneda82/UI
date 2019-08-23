@@ -1,0 +1,319 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  background: url('../images/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+body {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+}
+html,
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-family: 'Fredoka One', cursive;
+}
+h2,
+h3 {
+  font-family: 'Red Hat Text', sans-serif;
+}
+button {
+  font-family: 'Red Hat Text', sans-serif;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #E39774;
+  color: rgba(255, 255, 255, 0.404);
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 5px 0 5px 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #eeeeee;
+  border-bottom: solid #5C9EAD 5px;
+  padding: 5px 0 5px 0;
+  position: fixed;
+  width: 100%;
+}
+.logo .toolbox {
+  width: 65px;
+  padding: 10px 7px 8.9px 7px;
+}
+@media (min-width: 800px) {
+  .logo .toolbox {
+    width: 75px;
+    padding: 10px 7px 8.9px 7px;
+  }
+}
+@media (min-width: 1000px) {
+  .logo .toolbox {
+    width: 70px;
+    padding: 10px 7px 8.9px 7px;
+  }
+}
+.logo h1 {
+  align-self: center;
+  color: #E39774;
+  font-size: 3.5rem;
+}
+@media (min-width: 800px) {
+  .logo h1 {
+    align-self: center;
+    color: #E39774;
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .logo h1 {
+    align-self: center;
+    color: #E39774;
+    font-size: 3.5rem;
+  }
+}
+p {
+  align-self: center;
+  margin: 8rem 0 0 0;
+  font-size: 2.7rem;
+  color: #035E7B;
+}
+.loginForm {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+  width: 95%;
+  margin: 3rem 0 0 0;
+  color: #035E7B;
+  font-size: 100%;
+}
+@media (min-width: 800px) {
+  .loginForm {
+    width: 60%;
+  }
+}
+.loginForm h2 {
+  color: #035E7B;
+  font-size: 2.5rem;
+}
+.loginForm hr {
+  border: 1px solid #E39774;
+  width: 100%;
+}
+.loginForm .inputLabels {
+  margin: 3rem 0 0 0;
+  font-size: 2rem;
+}
+.loginForm .inputFields {
+  padding: 15px 0 5px 3px;
+}
+.loginForm .memberMe {
+  margin: 15px 0px 0 0;
+  font-size: 1.5rem;
+}
+.loginForm .memberMe input {
+  margin: 10px 0 5px;
+}
+.loginForm .buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-content: center;
+  margin: 20px 0 14px 0px;
+}
+@media (min-width: 800px) {
+  .loginForm .buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px 0px 15px 0px;
+  }
+}
+.loginForm .buttons button {
+  background-color: #5C9EAD;
+  color: #eeeeee;
+  width: 45%;
+  font-size: 2.8rem;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  padding: 0px 10px;
+}
+.loginForm .buttons button:hover {
+  cursor: pointer;
+  color: #b3ebfd;
+  background-color: #a0c6cf;
+}
+.newMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  color: #5C9EAD;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 255, 0.404);
+  width: 95%;
+  border-radius: 7px;
+  padding: 0 0 10px 0;
+  margin: 1.9rem 0 0 0;
+}
+@media (min-width: 800px) {
+  .newMember {
+    width: 60%;
+  }
+}
+.newMember b {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 0 10px 0;
+}
+.newMember button {
+  align-self: center;
+  font-size: 1.5rem;
+  padding: 0 20px 0 20px;
+  border-radius: 7px;
+  background-color: #E39774;
+  color: #eeeeee;
+}
+.newMember button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #f4d7c9;
+}
