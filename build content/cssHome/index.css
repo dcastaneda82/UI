@@ -300,6 +300,8 @@ footer {
 .allGuides .topGuide {
   display: flex;
   margin: 65px 0 0 0;
+  background-color: #E39774;
+  border-radius: 0 0 13px 13px;
 }
 @media (min-width: 800px) {
   .allGuides .topGuide {
@@ -316,7 +318,13 @@ footer {
 .allGuides .topGuide img,
 .allGuides .topGuide .overlay {
   transition: 0.5s all;
-  border-radius: 13px;
+  border-radius: 0 0 13px 13px;
+}
+@media (min-width: 800px) {
+  .allGuides .topGuide img,
+  .allGuides .topGuide .overlay {
+    border-radius: 13px;
+  }
 }
 .allGuides .topGuide a {
   position: absolute;
@@ -334,11 +342,14 @@ footer {
 }
 .allGuides .topGuide a:hover {
   box-shadow: 0 10px 40px #ffffff;
-  border-radius: 13px;
   transition: 0.5s all;
 }
 @media (min-width: 800px) {
   .allGuides .topGuide a {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 31.23rem;
     font-size: 3rem;
   }
@@ -361,7 +372,7 @@ footer {
 }
 @media (min-width: 800px) {
   .allGuides .subGuides .subGuide {
-    margin: 10px 0 10px;
+    margin: 0px 0 10px;
   }
 }
 .allGuides .subGuides .subGuide:hover .overlay {
@@ -370,11 +381,23 @@ footer {
 .allGuides .subGuides .subGuide:hover img {
   -webkit-filter: blur(2px);
   filter: blur(5px);
+  margin: 15px 0 15px 0;
+}
+.allGuides .subGuides .subGuide:first-child img {
+  border-radius: 13px 13px 0 0;
+}
+.allGuides .subGuides .subGuide:last-child img {
+  border-radius: 0 0 13px 13px;
 }
 .allGuides .subGuides .subGuide img,
 .allGuides .subGuides .subGuide .overlay {
   transition: 0.5s all;
-  border-radius: 13px;
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide img,
+  .allGuides .subGuides .subGuide .overlay {
+    border-radius: 13px;
+  }
 }
 .allGuides .subGuides .subGuide a {
   position: absolute;
@@ -393,7 +416,11 @@ footer {
 .allGuides .subGuides .subGuide a:hover {
   box-shadow: 0 10px 30px #ffffff;
   transition: 0.5s all;
-  border-radius: 13px;
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide a:hover {
+    border-radius: 13px;
+  }
 }
 @media (min-width: 800px) {
   .allGuides .subGuides .subGuide a {
@@ -418,7 +445,7 @@ footer {
   .buttons {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
     margin: 20px 0px 15px 0px;
   }
@@ -427,10 +454,16 @@ footer {
   background-color: #5C9EAD;
   color: #eeeeee;
   width: 45%;
-  font-size: 2.8rem;
+  font-size: 2rem;
   border-radius: 10px;
   margin: 10px 0 10px 0;
   padding: 0px 10px;
+}
+@media (min-width: 800px) {
+  .buttons button {
+    width: 22%;
+    font-size: 1.7rem;
+  }
 }
 .buttons button:hover {
   cursor: pointer;
