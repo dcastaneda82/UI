@@ -53,13 +53,12 @@
     .topGuide {
         display: flex;
         margin: 65px 0 0 0;
-        background-color: @middle-red;
-        border-radius: 0 0 13px 13px;
+
 
 
         @media @mobile800 {
             margin: 10rem 0 0 0;
-
+            
         }
 
         &:hover .overlay {
@@ -74,11 +73,7 @@
         img,
         .overlay {
             transition: .5s all;
-            border-radius: 0 0 13px 13px;
-
-            @media @mobile800 {
-                border-radius: 13px;
-            }
+            border-radius: 13px;
         }
 
         a {
@@ -92,19 +87,13 @@
             border-bottom: 5px solid @isabelline;
             text-decoration: none;
 
-
-
             &:hover {
                 box-shadow: 0 10px 40px rgb(255, 255, 255);
+                border-radius: 13px;
                 transition: .5s all;
-
-                // @media @mobile800 {
-                //     border-radius: 13px;
-                // }
             }
 
             @media @mobile800 {
-                .topGuideAttr(absolute, 45%, 50%, translate(-50%, -50%));
                 width: 31.23rem;
                 font-size: 3rem;
 
@@ -120,7 +109,7 @@
         border: 2px solid @blue-saphire;
         border-radius: 13px;
         margin: 15px 0 15px;
-
+    
     }
 
     .subGuides {
@@ -132,9 +121,9 @@
             position: relative;
             text-align: center;
             width: 100%;
-            
+
             @media @mobile800 {
-                margin: 0px 0 10px;
+                margin: 10px 0 10px;
             }
 
             &:hover .overlay {
@@ -144,25 +133,12 @@
             &:hover img {
                 -webkit-filter: blur(2px);
                 filter: blur(5px);
-                margin: 15px 0 15px 0;
             }
-
-            &:first-child img {
-                    border-radius: 13px 13px 0 0;
-            }
-
-            &:last-child img {
-                border-radius:  0 0 13px 13px;
-        }
 
             img,
             .overlay {
                 transition: .5s all;
-
-                @media @mobile800 {
-                    border-radius: 13px;
-                }
-
+                border-radius: 13px;
             }
 
             a {
@@ -179,10 +155,7 @@
                 &:hover {
                     box-shadow: 0 10px 30px rgb(255, 255, 255);
                     transition: .5s all;
-
-                    @media @mobile800 {
-                        border-radius: 13px;
-                    }
+                    border-radius: 13px;
                 }
 
                 @media @mobile800 {
@@ -194,9 +167,6 @@
                     }
                 }
             }
-            // &:first-child img:hover {
-            //     margin: 0px 0 15px 0;
-            // }
         }
     }
 }
@@ -207,19 +177,14 @@
     margin: 20px 0 14px 0px;
 
     @media @mobile800 {
-        .buttons(row, space-evenly, center);
+        .buttons(row, space-between, center);
         margin: 20px 0px 15px 0px;
     }
 
     button {
-        .buttonAtt(@button-bg, @button-txt, 45%, 2rem, 10px);
+        .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
         margin: 10px 0 10px 0;
         padding: 0px 10px;
-
-        @media @mobile800 {
-            width: 22%;
-            font-size: 1.7rem;
-        }
 
         &:hover {
             cursor: pointer;
