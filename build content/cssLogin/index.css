@@ -123,7 +123,7 @@ table {
   border-spacing: 0;
 }
 * {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 html {
   font-size: 100%;
@@ -136,23 +136,9 @@ body {
   flex-flow: column;
   align-self: center;
 }
-html,
-body {
-  font-family: 'Varela Round', sans-serif;
-}
 img {
   width: 100%;
   height: auto;
-}
-h1 {
-  font-family: 'Fredoka One', cursive;
-}
-h2,
-h3 {
-  font-family: 'Red Hat Text', sans-serif;
-}
-button {
-  font-family: 'Red Hat Text', sans-serif;
 }
 footer {
   display: flex;
@@ -173,6 +159,7 @@ footer {
   padding: 5px 0 5px 0;
   position: fixed;
   width: 100%;
+  font-family: 'Fredoka One', cursive;
 }
 .logo .toolbox {
   width: 65px;
@@ -212,8 +199,20 @@ footer {
 p {
   align-self: center;
   margin: 8rem 0 0 0;
-  font-size: 2.7rem;
+  font-size: 3rem;
   color: #035E7B;
+  font-family: 'Shadows Into Light', cursive;
+}
+@media (min-width: 800px) {
+  p {
+    font-size: 3.5rem;
+    margin: 9rem 0 0 0;
+  }
+}
+@media (min-width: 1000px) {
+  p {
+    font-size: 4rem;
+  }
 }
 .loginForm {
   display: flex;
@@ -238,11 +237,24 @@ p {
   width: 100%;
 }
 .loginForm .inputLabels {
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 5px 0;
   font-size: 2rem;
+  font-family: 'Red Hat Text', sans-serif;
+}
+@media (min-width: 800px) {
+  .loginForm .inputLabels {
+    font-size: 2.5rem;
+  }
 }
 .loginForm .inputFields {
   padding: 15px 0 5px 3px;
+  border-radius: 7px;
+}
+@media (min-width: 1000px) {
+  .loginForm .inputFields {
+    padding: 25px 0 10px 6px;
+    font-size: 20px;
+  }
 }
 .loginForm .memberMe {
   margin: 15px 0px 0 0;
@@ -274,7 +286,12 @@ p {
   font-size: 2.8rem;
   border-radius: 10px;
   margin: 10px 0 10px 0;
-  padding: 0px 10px;
+  padding: 10px 10px;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.loginForm .buttons button a {
+  text-decoration: none;
+  color: #eeeeee;
 }
 .loginForm .buttons button:hover {
   cursor: pointer;
@@ -293,6 +310,7 @@ p {
   border-radius: 7px;
   padding: 0 0 10px 0;
   margin: 1.9rem 0 49px 0;
+  font-family: 'Red Hat Text', sans-serif;
 }
 @media (min-width: 800px) {
   .newMember {
@@ -307,7 +325,7 @@ p {
 .newMember button {
   align-self: center;
   font-size: 1.5rem;
-  padding: 0 20px 0 20px;
+  padding: 10px 20px 10px 20px;
   border-radius: 7px;
   background-color: #E39774;
   color: #eeeeee;

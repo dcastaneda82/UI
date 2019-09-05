@@ -6,6 +6,8 @@
 
 .main {
     overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .headerNavBar {
@@ -52,11 +54,20 @@
     flex-direction: column;
     margin: 65px 0 0 0;
 
+    @media @mobile800 {
+        width: 500px;
+    }
+
+    @media @mobile1000 {
+        width: 800px;
+    }
+
     .titleContent {
         align-self: center;
         text-align: center;
         margin: 55px 0 55px 0;
         color: @font-color;
+
         h2 {
             font-size: 2.5rem;
             margin-bottom: 5px;
@@ -97,28 +108,77 @@
     .steps {
         display: flex;
         flex-direction: column;
-        color: @isabelline;
+        color: @blue-saphire;
 
         .step {
 
             img {
                 margin: 10px 0;
+                color: white;
+
             }
 
-            h2 {
-                font-size: 25px;
-                padding: 5px 0px 5px 5px;
-                background: @blue-saphire;
-                width: 80px;
-                border-radius: 0 7px 0 0;
-            }
+            .stepBox {
+                background-color: @blue-saphire;
+                display: flex;
+                flex-direction: column;
 
-            p {
-                font-size: 20px;
-                background: @blue-saphire;
-                padding: 20px 10px 20px 5px;
-                margin-bottom: 10px;
-                
+                @media @mobile800 {
+                    background-color: transparent;
+                }
+
+
+
+                .box1 {
+
+                    @media @mobile800 {
+                        background-color: @blue-saphire;
+                        align-self: flex-start;
+                        border-radius: 7px 7px 7px 7px;
+                        margin: 10px 0 0 14px;
+                    }
+
+                    h2 {
+                        font-size: 25px;
+                        padding: 5px 0px 5px 5px;
+                        margin: 15px 15px 0px 15px;
+                        width: 80px;
+                        border-radius: 7px 7px 0px 0px;
+                        background: @isabelline;
+
+                        @media @mobile800 {
+                            margin: 5px 5px 5px 5px;
+                            border-radius: 7px 7px 7px 7px;
+                        }
+
+                    }
+                }
+
+                .box2 {
+
+                    @media @mobile800 {
+                        background-color: @blue-saphire;
+                        margin: 15px 15px 15px 15px;
+                        border-radius: 7px 7px 7px 7px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                        background: @isabelline;
+                        padding: 20px 10px 20px 5px;
+                        border-radius: 0 7px 7px 7px;
+                        margin: 0px 15px 15px 15px;
+
+                        @media @mobile800 {
+                            margin: 5px 5px 5px 5px;
+                            border-radius: 7px 7px 7px 7px;
+                        }
+
+                    }
+                }
+
+
+
             }
         }
     }

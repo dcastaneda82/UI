@@ -136,23 +136,9 @@ body {
   flex-flow: column;
   align-self: center;
 }
-html,
-body {
-  font-family: 'Varela Round', sans-serif;
-}
 img {
   width: 100%;
   height: auto;
-}
-h1 {
-  font-family: 'Fredoka One', cursive;
-}
-h2,
-h3 {
-  font-family: 'Red Hat Text', sans-serif;
-}
-button {
-  font-family: 'Red Hat Text', sans-serif;
 }
 footer {
   display: flex;
@@ -194,6 +180,7 @@ footer {
   align-self: center;
   color: #E39774;
   font-size: 3.5rem;
+  font-family: 'Fredoka One', cursive;
 }
 @media (min-width: 800px) {
   .logo h1 {
@@ -213,7 +200,7 @@ footer {
   display: flex;
   flex-flow: column;
   align-self: center;
-  margin: 10rem 0 0 0;
+  margin: 7rem 0 0 0;
   width: 95%;
   color: #035E7B;
   font-size: 100%;
@@ -226,14 +213,19 @@ footer {
 .signUpForm h2 {
   color: #035E7B;
   font-size: 2.5rem;
+  font-family: 'Shadows Into Light', cursive;
 }
 .signUpForm hr {
   border: 1px solid #E39774;
   width: 100%;
 }
+.signUpForm p {
+  font-family: 'Varela Round', sans-serif;
+}
 .signUpForm .inputLabels {
   margin: 2rem 0 0 0;
   font-size: 2rem;
+  font-family: 'Varela Round', sans-serif;
 }
 .signUpForm .inputFields {
   padding: 15px 0 5px 3px;
@@ -241,6 +233,7 @@ footer {
 .signUpForm .memberMe {
   margin: 15px 0px 0 0;
   font-size: 1.5rem;
+  font-family: 'Red Hat Text', sans-serif;
 }
 .signUpForm .memberMe input {
   margin: 10px 0 5px;
@@ -251,6 +244,7 @@ footer {
   justify-content: space-between;
   align-content: center;
   margin: 20px 0 14px 0px;
+  font-family: 'Red Hat Text', sans-serif;
 }
 @media (min-width: 800px) {
   .signUpForm .buttons {
@@ -267,8 +261,12 @@ footer {
   width: 45%;
   font-size: 2.8rem;
   border-radius: 10px;
-  margin: 10px 0 10px 0;
-  padding: 0px 10px;
+  margin: 10px 0 1px 0;
+  padding: 10px 10px;
+}
+.signUpForm .buttons button a {
+  text-decoration: none;
+  color: #eeeeee;
 }
 .signUpForm .buttons button:hover {
   cursor: pointer;
@@ -286,6 +284,7 @@ footer {
   width: 95%;
   border-radius: 7px;
   padding: 0 0 10px 0;
+  font-family: 'Red Hat Text', sans-serif;
 }
 @media (min-width: 800px) {
   .alreadyMember {
@@ -300,9 +299,14 @@ footer {
 .alreadyMember button {
   align-self: center;
   font-size: 1.5rem;
-  padding: 0 20px 0 20px;
+  padding: 10 20px 10 20px;
   border-radius: 7px;
   background-color: #E39774;
+  color: #eeeeee;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.alreadyMember button a {
+  text-decoration: none;
   color: #eeeeee;
 }
 .alreadyMember button:hover {

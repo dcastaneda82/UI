@@ -233,6 +233,8 @@ ul li a .icon .fa:last-child {
 }
 .main {
   overflow: auto;
+  display: flex;
+  justify-content: center;
 }
 .headerNavBar {
   display: flex;
@@ -297,6 +299,16 @@ ul li a .icon .fa:last-child {
   flex-direction: column;
   margin: 65px 0 0 0;
 }
+@media (min-width: 800px) {
+  .mainContent {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .mainContent {
+    width: 800px;
+  }
+}
 .mainContent .titleContent {
   align-self: center;
   text-align: center;
@@ -335,23 +347,63 @@ ul li a .icon .fa:last-child {
 .mainContent .steps {
   display: flex;
   flex-direction: column;
-  color: #eeeeee;
+  color: #035E7B;
 }
 .mainContent .steps .step img {
   margin: 10px 0;
+  color: white;
 }
-.mainContent .steps .step h2 {
+.mainContent .steps .step .stepBox {
+  background-color: #035E7B;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox {
+    background-color: transparent;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box1 {
+    background-color: #035E7B;
+    align-self: flex-start;
+    border-radius: 7px 7px 7px 7px;
+    margin: 10px 0 0 14px;
+  }
+}
+.mainContent .steps .step .stepBox .box1 h2 {
   font-size: 25px;
   padding: 5px 0px 5px 5px;
-  background: #035E7B;
+  margin: 15px 15px 0px 15px;
   width: 80px;
-  border-radius: 0 7px 0 0;
+  border-radius: 7px 7px 0px 0px;
+  background: #eeeeee;
 }
-.mainContent .steps .step p {
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box1 h2 {
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box2 {
+    background-color: #035E7B;
+    margin: 15px 15px 15px 15px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+.mainContent .steps .step .stepBox .box2 p {
   font-size: 20px;
-  background: #035E7B;
+  background: #eeeeee;
   padding: 20px 10px 20px 5px;
-  margin-bottom: 10px;
+  border-radius: 0 7px 7px 7px;
+  margin: 0px 15px 15px 15px;
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box2 p {
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px 7px 7px 7px;
+  }
 }
 .mainContent .rating {
   display: flex;

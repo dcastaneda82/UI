@@ -54,11 +54,9 @@
         display: flex;
         margin: 65px 0 0 0;
 
-
-
         @media @mobile800 {
             margin: 10rem 0 0 0;
-            
+
         }
 
         &:hover .overlay {
@@ -73,7 +71,11 @@
         img,
         .overlay {
             transition: .5s all;
-            border-radius: 13px;
+
+            @media @mobile800 {
+                border-radius: 13px;
+            }
+
         }
 
         a {
@@ -86,6 +88,10 @@
             padding: 10px 0 10px 0;
             border-bottom: 5px solid @isabelline;
             text-decoration: none;
+
+            @media @mobile800 {
+                .topGuideAttr(absolute, 45%, 50%, translate(-50%, -50%));
+            }
 
             &:hover {
                 box-shadow: 0 10px 40px rgb(255, 255, 255);
@@ -109,10 +115,14 @@
         border: 2px solid @blue-saphire;
         border-radius: 13px;
         margin: 15px 0 15px;
-    
+
     }
 
     .subGuides {
+
+        @media @mobile800 {
+            margin-bottom: 100px;
+        }
 
         .subGuide {
 
@@ -138,7 +148,11 @@
             img,
             .overlay {
                 transition: .5s all;
-                border-radius: 13px;
+
+                @media @mobile800 {
+                    border-radius: 13px;
+                }
+
             }
 
             a {
@@ -166,6 +180,8 @@
                         box-shadow: 0 10px 60px rgb(255, 255, 255);
                     }
                 }
+
+
             }
         }
     }
@@ -175,16 +191,23 @@
 
     .buttons(row, space-between, center);
     margin: 20px 0 14px 0px;
+    position: fixed;
 
     @media @mobile800 {
         .buttons(row, space-between, center);
         margin: 20px 0px 15px 0px;
+        top: 85%;
     }
 
     button {
-        .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
-        margin: 10px 0 10px 0;
+        .buttonAtt(@button-bg, @button-txt, 2.5rem, 10px);
+        margin: 10px 10px 10px 10px;
         padding: 0px 10px;
+
+        a {
+            text-decoration: none;
+            color: @isabelline;
+        }
 
         &:hover {
             cursor: pointer;

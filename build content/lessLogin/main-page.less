@@ -5,6 +5,7 @@
     padding: 5px 0 5px 0;
     position: fixed;
     width: 100%;
+    font-family: 'Fredoka One', cursive;
 
     @media @mobile800 {}
 
@@ -36,8 +37,18 @@
 p {
     align-self: center;
     margin: 8rem 0 0 0;
-    font-size: 2.7rem;
+    font-size: 3rem;
     color: @font-color;
+    font-family: 'Shadows Into Light', cursive;
+
+    @media @mobile800 {
+        font-size: 3.5rem;
+        margin: 9rem 0 0 0;
+    }
+
+    @media @mobile1000 {
+        font-size: 4rem;
+    }
 }
 
 .loginForm {
@@ -62,12 +73,23 @@ p {
     }
 
     .inputLabels {
-        margin: 3rem 0 0 0;
+        margin: 3rem 0 5px 0;
         font-size: 2rem;
+        font-family: 'Red Hat Text', sans-serif;
+
+        @media @mobile800 {
+            font-size: 2.5rem;
+        }
     }
 
     .inputFields {
         padding: 15px 0 5px 3px;
+        border-radius: 7px;
+
+        @media @mobile1000 {
+            padding: 25px 0 10px 6px;
+            font-size: 20px;
+        }
     }
 
     .memberMe {
@@ -93,7 +115,13 @@ p {
             
             .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
             margin: 10px 0 10px 0;
-            padding: 0px 10px;
+            padding: 10px 10px;
+            font-family: 'Red Hat Text', sans-serif;
+
+            a {
+                text-decoration: none;
+                color: @isabelline;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -112,6 +140,7 @@ p {
     border-radius: 7px;
     padding: 0 0 10px 0;
     margin: 1.9rem 0 49px 0;
+    font-family: 'Red Hat Text', sans-serif;
 
     @media @mobile800 {
         width: 60%;
@@ -126,7 +155,7 @@ p {
     button {
         align-self: center;
         font-size: 1.5rem;
-        padding: 0 20px 0 20px;
+        padding: 10px 20px 10px 20px;
         border-radius: 7px;
         background-color: @middle-red;
         color: @isabelline;

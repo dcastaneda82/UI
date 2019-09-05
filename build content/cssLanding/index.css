@@ -144,15 +144,15 @@ img {
   width: 100%;
   height: auto;
 }
-h1 {
-  font-family: 'Fredoka One', cursive;
-}
-h2,
-h3 {
-  font-family: 'Red Hat Text', sans-serif;
-}
-button {
-  font-family: 'Red Hat Text', sans-serif;
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #E39774;
+  color: rgba(255, 255, 255, 0.404);
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 5px 0 5px 0;
+  font-family: 'Varela Round', sans-serif;
 }
 .logo {
   display: flex;
@@ -184,6 +184,7 @@ button {
   align-self: center;
   color: #E39774;
   font-size: 3.5rem;
+  font-family: 'Fredoka One', cursive;
 }
 @media (min-width: 800px) {
   .logo h1 {
@@ -206,6 +207,7 @@ button {
   flex-flow: column;
   text-align: center;
   margin: 7rem 0 10px 0;
+  font-family: 'Shadows Into Light', cursive;
 }
 @media (min-width: 800px) {
   .welcome {
@@ -213,28 +215,11 @@ button {
   }
 }
 @media (min-width: 1000px) {
-  .welcome {
-    animation: fadein 3s;
-    -moz-animation: fadein 3s;
-    /* Firefox */
-    -webkit-animation: fadein 3s;
-    /* Safari and Chrome */
-    -o-animation: fadein 3s;
-    /* Opera */
-  }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 }
 .welcome h2 {
   font-size: 3.7rem;
   color: #035E7B;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 7px;
   padding: 10px;
 }
@@ -242,17 +227,26 @@ button {
   .welcome h2 {
     font-size: 2.7rem;
     color: #035E7B;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 7px;
     padding: 10px;
     margin: 0 0 15px 0;
     align-self: center;
   }
 }
+@media (min-width: 1000px) {
+  .welcome h2 {
+    font-size: 4rem;
+    color: #035E7B;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 10px;
+  }
+}
 .welcome h3 {
   font-size: 2.7rem;
   color: #035E7B;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 7px;
   padding: 10px;
   margin: 10px 0 10px 0;
@@ -261,11 +255,20 @@ button {
   .welcome h3 {
     font-size: 2.3rem;
     color: #035E7B;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 7px;
     padding: 10px 155px;
     margin: 15px 0 15px 0;
     align-self: center;
+  }
+}
+@media (min-width: 1000px) {
+  .welcome h3 {
+    font-size: 3rem;
+    color: #035E7B;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 10px 155px;
   }
 }
 .welcome img {
@@ -285,26 +288,35 @@ button {
 .welcome h4 {
   font-size: 2.3rem;
   color: #035E7B;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 7px;
   padding: 10px;
   margin: 10px 0 10px 0;
 }
 @media (min-width: 800px) {
   .welcome h4 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #035E7B;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 7px;
     padding: 10px 177px;
     margin: 20px 0 0px 0;
     align-self: center;
   }
 }
+@media (min-width: 1000px) {
+  .welcome h4 {
+    font-size: 3.5rem;
+    color: #035E7B;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 10px 177px;
+  }
+}
 .welcome h5 {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: #035E7B;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 7px;
   padding: 10px;
   margin: 10px 0 10px 0;
@@ -313,11 +325,20 @@ button {
   .welcome h5 {
     font-size: 2rem;
     color: #035E7B;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 7px;
     padding: 10px 240px;
     margin: 20px 0 0px 0;
     align-self: center;
+  }
+}
+@media (min-width: 1000px) {
+  .welcome h5 {
+    font-size: 3rem;
+    color: #035E7B;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    padding: 10px 240px;
   }
 }
 .buttons {
@@ -329,21 +350,23 @@ button {
 }
 @media (min-width: 800px) {
   .buttons {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-content: center;
     margin: 20px 30px 15px 30px;
+    width: 800px;
+    align-self: center;
   }
 }
 .buttons button {
   background-color: #5C9EAD;
-  color: #eeeeee;
   width: 45%;
   font-size: 2.8rem;
   border-radius: 10px;
   margin: 10px 0 10px 0;
   padding: 0px 10px;
+  font-family: 'Red Hat Text', sans-serif;
+}
+.buttons button a {
+  text-decoration: none;
+  color: #eeeeee;
 }
 .buttons button:hover {
   cursor: pointer;
@@ -354,7 +377,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #E39774;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.404);
   width: 100%;
   margin: 10px 0 0 0;
   padding: 5px 0 5px 0;

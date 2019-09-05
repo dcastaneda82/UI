@@ -22,6 +22,7 @@
 
     h1 {
         .headerText(center, @h1TextColor, 3.5rem);
+        font-family: 'Fredoka One', cursive;
 
         @media @mobile800 {
             .headerText(center, @h1TextColor, 4.5rem);
@@ -46,6 +47,7 @@
 
     h2 {
         .form-txt(@main-txt, 2.5rem);
+        font-family: @mainText;
     }
 
     hr {
@@ -53,9 +55,14 @@
         width: 100%;
     }
 
+    p {
+        font-family:'Varela Round', sans-serif;
+    }
+
     .inputLabels {
         margin: 2rem 0 0 0;
         font-size: 2rem;
+        font-family:'Varela Round', sans-serif;
     }
 
     .inputFields {
@@ -65,6 +72,7 @@
     .memberMe {
         margin: 15px 0px 0 0;
         font-size: 1.5rem;
+        font-family: 'Red Hat Text', sans-serif;
 
         input {
             margin: 10px 0 5px;
@@ -75,6 +83,7 @@
 
         .buttons(row, space-between, center);
         margin: 20px 0 14px 0px;
+        font-family: 'Red Hat Text', sans-serif;
 
         @media @mobile800 {
             .buttons(row, space-between, center);
@@ -83,8 +92,13 @@
 
         button {
             .buttonAtt(@button-bg, @button-txt, 45%, 2.8rem, 10px);
-            margin: 10px 0 10px 0;
-            padding: 0px 10px;
+            margin: 10px 0 1px 0;
+            padding: 10px 10px;
+            
+            a {
+                text-decoration: none;
+                color: @button-txt;
+            }
 
             &:hover {
                 cursor: pointer;
@@ -102,6 +116,7 @@
         width: 95%;
         border-radius: 7px;
         padding: 0 0 10px 0;
+        font-family: 'Red Hat Text', sans-serif;
 
         @media @mobile800 {
             width: 60%;
@@ -115,10 +130,16 @@
         button {
             align-self: center;
             font-size: 1.5rem;
-            padding: 0 20px 0 20px;
+            padding: 10 20px 10 20px;
             border-radius: 7px;
             background-color: @middle-red;
             color: @isabelline;
+            font-family: 'Red Hat Text', sans-serif;
+
+            a {
+                text-decoration: none;
+                color: @button-txt;
+            }
 
             &:hover {
                 cursor: pointer;
