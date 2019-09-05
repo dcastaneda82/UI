@@ -1,0 +1,460 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 100%;
+}
+body {
+  background: url('../images/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+}
+html,
+body {
+  font-family: 'Varela Round', sans-serif;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+h1 {
+  font-family: 'Fredoka One', cursive;
+}
+h2,
+h3 {
+  font-family: 'Red Hat Text', sans-serif;
+}
+button {
+  font-family: 'Red Hat Text', sans-serif;
+}
+ul {
+  display: flex;
+  align-self: center;
+  width: auto;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid #5C9EAD;
+}
+ul li:last-child {
+  border-right: none;
+}
+ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  display: block;
+}
+ul li a:hover .icon .fa {
+  transform: translateY(-100%);
+}
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #035E7B;
+  font-size: 15px;
+  line-height: 20px;
+  transition: 0.5s;
+}
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #E39774;
+}
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 25px;
+  transition: 0.5s;
+  color: #035E7B;
+}
+ul li a .icon .fa:last-child {
+  color: #E39774;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #E39774;
+  position: relative;
+  color: rgba(255, 255, 255, 0.404);
+  font-family: 'Varela Round', sans-serif;
+  padding: 5px 0 5px 0;
+}
+.container {
+  min-height: 100%;
+}
+.main {
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+.headerNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #eeeeee;
+  padding: 0 0px 0 10px;
+  position: fixed;
+  width: 100%;
+  border-bottom: solid #5C9EAD 5px;
+  z-index: 1;
+}
+.headerNavBar .logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #eeeeee;
+}
+.headerNavBar .toolbox {
+  align-self: center;
+  width: 32px;
+  height: 26px;
+  margin: 0px 5px 0px 0px;
+}
+@media (min-width: 800px) {
+  .headerNavBar .toolbox {
+    align-self: center;
+    width: 52px;
+    height: 46px;
+    margin: 8px 0px 8px 0px;
+  }
+}
+@media (min-width: 1000px) {
+  .headerNavBar .toolbox {
+    align-self: center;
+    width: 62px;
+    height: 56px;
+    margin: 10px 0px 10px 0px;
+  }
+}
+.headerNavBar h1 {
+  align-self: center;
+  color: #E39774;
+  font-size: 33px;
+}
+@media (min-width: 800px) {
+  .headerNavBar h1 {
+    align-self: center;
+    color: #E39774;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .headerNavBar h1 {
+    align-self: center;
+    color: #E39774;
+    font-size: 4.5rem;
+  }
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  margin: 65px 0 0 0;
+}
+@media (min-width: 800px) {
+  .mainContent {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .mainContent {
+    width: 800px;
+  }
+}
+.mainContent .titleContent {
+  align-self: center;
+  text-align: center;
+  margin: 55px 0 55px 0;
+  color: #035E7B;
+}
+.mainContent .titleContent h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+.mainContent .titleContent h3 {
+  font-size: 1.3rem;
+}
+.mainContent .titleContent h4 {
+  margin-top: 5px;
+}
+.mainContent .materials {
+  display: flex;
+  flex-direction: column;
+  color: #035E7B;
+}
+.mainContent .materials h2 {
+  font-size: 1.3rem;
+}
+.mainContent .materials h3 {
+  background-color: #eeeeee;
+  padding: 1rem;
+  text-align: inherit;
+  margin: 7px 0;
+  border: 1px solid #5C9EAD;
+}
+.mainContent hr {
+  color: #E39774;
+  border: 2px solid;
+}
+.mainContent .steps {
+  display: flex;
+  flex-direction: column;
+  color: #035E7B;
+}
+.mainContent .steps .step img {
+  margin: 10px 0;
+  color: white;
+}
+.mainContent .steps .step .stepBox {
+  background-color: #035E7B;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox {
+    background-color: transparent;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box1 {
+    background-color: #035E7B;
+    align-self: flex-start;
+    border-radius: 7px 7px 7px 7px;
+    margin: 10px 0 0 14px;
+  }
+}
+.mainContent .steps .step .stepBox .box1 h2 {
+  font-size: 25px;
+  padding: 5px 0px 5px 5px;
+  margin: 15px 15px 0px 15px;
+  width: 80px;
+  border-radius: 7px 7px 0px 0px;
+  background: #eeeeee;
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box1 h2 {
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box2 {
+    background-color: #035E7B;
+    margin: 15px 15px 15px 15px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+.mainContent .steps .step .stepBox .box2 p {
+  font-size: 20px;
+  background: #eeeeee;
+  padding: 20px 10px 20px 5px;
+  border-radius: 0 7px 7px 7px;
+  margin: 0px 15px 15px 15px;
+}
+@media (min-width: 800px) {
+  .mainContent .steps .step .stepBox .box2 p {
+    margin: 5px 5px 5px 5px;
+    border-radius: 7px 7px 7px 7px;
+  }
+}
+.mainContent .rating {
+  display: flex;
+  margin: 0px 0px 0 10px;
+}
+.mainContent .rating b {
+  font-size: 20px;
+}
+.mainContent .rating .stars {
+  margin: 0 0 0 10px;
+  display: flex;
+  align-self: center;
+}
+.mainContent .rating .stars .fa {
+  color: blue;
+}
+.mainContent .rating .stars .checked {
+  color: orange;
+}
+.mainContent .check {
+  margin: 10px 0 10px 10px;
+}
+.mainContent .check .chex input {
+  width: 1px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+@media (min-width: 800px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 15px 0px;
+  }
+}
+.buttons button {
+  background-color: #5C9EAD;
+  color: #eeeeee;
+  width: 400px;
+  font-size: 22px;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  padding: 0px 10px;
+}
+.buttons button:hover {
+  cursor: pointer;
+  color: #b3ebfd;
+  background-color: #a0c6cf;
+}
+.buttons button a {
+  font-size: 18px;
+}

@@ -1,0 +1,114 @@
+//Landing Page Content
+
+.headerNavBar {
+    .header(space-between, center, @header-bg);
+    padding: 0 0px 0 10px;
+    position: fixed;
+    width: 100%;
+    border-bottom: solid @cadet-blue 5px;
+    z-index: 1;
+
+    .logo {
+        .header(center, center, @header-bg)
+    }
+
+    @media @mobile800 {}
+
+    .toolbox {
+        .imageLogo(center, 32px, 26px, 0px 5px 0px 0px);
+
+        @media @mobile800 {
+            .imageLogo(center, 52px, 46px, 8px 0px 8px 0px);
+        }
+
+        @media @mobile1000 {
+            .imageLogo(center, 62px, 56px, 10px 0px 10px 0px);
+        }
+    }
+
+    h1 {
+        .headerText(center, @h1TextColor, 33px);
+
+        @media @mobile800 {
+            .headerText(center, @h1TextColor, 3.5rem);
+        }
+
+        @media @mobile1000 {
+            .headerText(center, @h1TextColor, 4.5rem);
+        }
+    }
+}
+
+.createGuide {
+    margin: 65px 0 0 0;
+    display: flex;
+    flex-direction: column;
+
+    @media @mobile800 {
+        width: 500px;
+        align-self: center;
+    }
+
+    .title {
+        color: @font-color;
+        font-size: 2.5rem;
+        padding: 15px 0px 15px 0px;
+        text-align: center;
+    }
+
+    .FormInputs {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 0 0;
+
+        .forms {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0 10px 0;
+
+            .inputLabels {
+                color: @font-color;
+                font-size: 2rem;
+
+            }
+
+            .inputFields {
+                font-size: 1rem;
+                height: 3rem;
+                padding: 15px 0 0 0;
+            }
+
+            &:first-child {
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+
+}
+
+.buttons {
+
+    .buttons(column);
+    align-self: center;
+
+    @media @mobile800 {
+        .buttons(column);
+        margin: 20px 0px 15px 0px;
+    }
+
+    button {
+        .buttonAtt(@button-bg, @button-txt, 400px, 22px, 10px);
+        margin: 10px 0 10px 0;
+        padding: 0px 10px;
+
+        &:hover {
+            cursor: pointer;
+            color: lighten(@blue-saphire, 60%);
+            background-color: lighten(@cadet-blue, 20%);
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+}
